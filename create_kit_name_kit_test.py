@@ -42,13 +42,13 @@ def negative_assert_no_kit_name(kit_body):
 
 # Prueba 1, 1 letra en el nombre
 def test_create_kit_1_letter_in_name_get_success_response():
-    positive_assert("a")
+    positive_assert(data.name_one_letter)
 
 
 # Prueba 2, 511 letras en el nombre
 
 def test_create_kit_511_letters_in_name_get_success_response():
-    positive_assert("AbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdAbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabC")
+    positive_assert(data.name_511_letters)
 
 
 # Prueba 3. nombre vacio
@@ -60,22 +60,22 @@ def test_create_kit_no_name_get_error_response():
 
 # Prueba 4 	El número de caracteres en el nombre es mayor que la cantidad permitida (512)
 def test_create_kit_512_letters_in_name_get_error_response():
-    negative_assert_symbol("AbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdAbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcD")
+    negative_assert_symbol(data.name_512_letters)
 
 
 # Prueba 5, nombre con caracteres especiales
 def test_create_kit_special_symbol_in_name_get_success_response():
-    positive_assert("\"№%@\",")
+    positive_assert(data.name_special_symbol)
 
 
 # Prueba 6, nombre con espacios
 def test_create_kit_name_with_spaces_get_success_response():
-    positive_assert(" A Aaa ")
+    positive_assert(data.name_with_spaces)
 
 
 # Prueba 7, números en el nombre
 def test_create_kit_numbers_on_the_name_get_success_response():
-    positive_assert("123")
+    positive_assert(data.name_numbers)
 
 
 # Prueba 8, parámetro vacio en la solicitud

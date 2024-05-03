@@ -1,10 +1,10 @@
 # Proyecto Urban Grocers 
 # Pruebas automatizadas para APIs con pytest: Creación de usuario y pruebas de requerimiento en el nombre de un kit
-
+### Yuzara Alfaro Arce Cohort 9
 ## Descripción
 
 
-Se realizó el siguiente archivo utilizando todo lo anteriormente aprendido y estudiado. Primero realicé la creacion del usuario de donde se sacó el token para generar un kit.
+Se realizó el siguiente archivo en Pycharm utilizando todo lo anteriormente aprendido y estudiado, también se realizaron las pruebas con ayuda de Pytest, herramienta que ayuda a realizar pruebas automatizadas. Primero realicé la creacion del usuario de donde se sacó el token para generar un kit.
 Una vez ya creado el kit, se procedió a realizar la ejecución de 9 pruebas. Estas tenian que probar si los requerimientos mencionados en la lista de comprobación estaban correctos o de lo contrario fallaban.
 
   **A continuación se detallan las pruebas realizadas:**
@@ -36,6 +36,12 @@ Una vez ya creado el kit, se procedió a realizar la ejecución de 9 pruebas. Es
     9. **Se ha pasado un tipo de parámetro diferente (número):**
        - `kit_body = { "name": 123 }`
 
+**##Indicaciones sobre cómo se realizo el proyecto**
+
+1.- En pycharm, tener abierto el codigo
+2.- En python packages, descargar: pip, pytest y el archivo packages.
+3.- Para ejecutar la prueba, en la terminal escribir  " pytest qa-project-Urban-Grocers-app-es "
+4.- Esperar a que la prueba se ejecute para ver en que ámbitos falló.
 ## Conclusiones
 
 De las 9 pruebas realizadas, 4 pruebas fallaron mientras que las restantes se ejecutaron exitosamente. Las pruebas que fallaron fueron las siguientes:
